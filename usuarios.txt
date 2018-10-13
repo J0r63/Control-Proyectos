@@ -1,0 +1,11 @@
+
+agregar esto para entrar al login
+/admin
+
+
+usuario y contraseña
+  username = admin
+  password = password
+
+
+
