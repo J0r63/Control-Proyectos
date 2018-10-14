@@ -8,7 +8,7 @@
   	</div>
   
   	<div class="login-box-body">
-    	<h4 class="login-box-msg">Ingrese la identificación del empleado http://www.codigofuentegratis.net/</h4>
+    	<h4 class="login-box-msg">Ingrese la identificación del empleado</h4>
 
     	<form id="attendance">
           <div class="form-group">

@@ -32,5 +32,6 @@
       .bold{
         font-weight: bold;
       }
+
   	</style>
 </head>
