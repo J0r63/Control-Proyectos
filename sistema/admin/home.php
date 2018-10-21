@@ -19,7 +19,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Dashboard
+        Informe de Registros 
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -146,7 +146,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Informe de asistencia mensual</h3>
+              <h3 class="box-title">Informe de Asistencia Mensual</h3>
               <div class="box-tools pull-right">
                 <form class="form-inline">
                   <div class="form-group">
