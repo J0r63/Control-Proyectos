@@ -68,7 +68,7 @@
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="customer_edit.php">
-                <input type="hidden" class="clid" name="id">
+                <input type="hidden" class="cli" name="id">
                   <div class="form-group">
                     <label for="edit_firstname" class="col-sm-3 control-label">Nombre</label>
 

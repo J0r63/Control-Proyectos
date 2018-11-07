@@ -12,8 +12,25 @@
         <li class="header">ESTADISTICAS</li>
         <li class=""><a href="home.php"><i class="fa fa-line-chart"></i> <span>Informe</span></a></li>
         <li class="header">REGISTROS</li>
-        <li><a href="#"><i class="fa fa-pencil-square-o"></i> <span>Encuestas</span></a></li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pencil-square-o"></i>
+            <span>Encuestas</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="https://docs.google.com/forms/d/1tXCPp6HcLHVA8SkwhrYVkFjPPR_HYtBSpGQosKVRJn0/edit"><i class="fa fa-circle-o"></i> Cuestionario </a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> Resultados</a></li>
+          </ul>
+        </li>
+
+
+
         <li><a href="attendance.php"><i class="fa fa-calendar"></i> <span>Asistencia</span></a></li>
+
 
          <li class="treeview">
           <a href="#">
