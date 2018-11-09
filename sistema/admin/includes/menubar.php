@@ -11,6 +11,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">ESTADISTICAS</li>
         <li class=""><a href="home.php"><i class="fa fa-line-chart"></i> <span>Informe</span></a></li>
+        <li class=""><a href="https://crmumg.000webhostapp.com/"><i class="fa fa-newspaper-o"></i> <span>CRM</span></a></li>
         <li class="header">REGISTROS</li>
 
         <li class="treeview">
@@ -23,7 +24,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="https://docs.google.com/forms/d/1tXCPp6HcLHVA8SkwhrYVkFjPPR_HYtBSpGQosKVRJn0/edit"><i class="fa fa-circle-o"></i> Cuestionario </a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Resultados</a></li>
+            <li><a href="https://docs.google.com/forms/d/1tXCPp6HcLHVA8SkwhrYVkFjPPR_HYtBSpGQosKVRJn0/edit#responses"><i class="fa fa-circle-o"></i> Resultados</a></li>
           </ul>
         </li>
 
