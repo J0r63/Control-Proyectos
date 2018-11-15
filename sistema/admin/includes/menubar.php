@@ -30,7 +30,7 @@
 
 
 
-        <li><a href="attendance.php"><i class="fa fa-calendar"></i> <span>Asistencia</span></a></li>
+        <li><a href="attendance.php"><i class="fa fa-calendar"></i> <span>Asignar Tareas</span></a></li>
 
 
          <li class="treeview">
