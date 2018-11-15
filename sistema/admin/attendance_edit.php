@@ -4,12 +4,10 @@
 	if(isset($_POST['edit'])){
 		$id = $_POST['id'];
 		$date = $_POST['edit_date'];
-		$time_in = $_POST['edit_time_in'];
-		$time_in = date('H:i:s', strtotime($time_in));
-		$time_out = $_POST['edit_time_out'];
-		$time_out = date('H:i:s', strtotime($time_out));
-
-		$sql = "UPDATE attendance SET date = '$date', time_in = '$time_in', time_out = '$time_out' WHERE id = '$id'";
+		$proyecto = $_POST['proyecto'];
+		$descripcion = $_POST['descripcion'];
+		
+		$sql = "UPDATE attendance SET date = '$date', proyecto = '$proyecto', descripcion = '$descripcion' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Attendance updated successfully';
 
@@ -23,17 +21,7 @@
 			$srow = $query->fetch_assoc();
 
 			//updates
-			$logstatus = ($time_in > $srow['time_in']) ? 0 : 1;
 			//
-
-			if($srow['time_in'] > $time_in){
-				$time_in = $srow['time_in'];
-			}
-
-			if($srow['time_out'] < $time_out){
-				$time_out = $srow['time_out'];
-			}
-
 			$time_in = new DateTime($time_in);
 			$time_out = new DateTime($time_out);
 			$interval = $time_in->diff($time_out);

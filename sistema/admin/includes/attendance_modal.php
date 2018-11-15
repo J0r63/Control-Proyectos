@@ -5,7 +5,7 @@
           	<div class="modal-header">
             	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
               		<span aria-hidden="true">&times;</span></button>
-            	<h4 class="modal-title"><b>Agregar asistencia</b></h4>
+            	<h4 class="modal-title"><b>Agregar Tarea</b></h4>
           	</div>
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST" action="attendance_add.php">
@@ -17,7 +17,7 @@
                   	</div>
                 </div>
                 <div class="form-group">
-                    <label for="datepicker_add" class="col-sm-3 control-label">Fecha</label>
+                    <label for="datepicker_add" class="col-sm-3 control-label">Entregar Antes</label>
 
                     <div class="col-sm-9"> 
                       <div class="date">
@@ -25,24 +25,24 @@
                       </div>
                     </div>
                 </div>
-                <div class="form-group">
-                  	<label for="time_in" class="col-sm-3 control-label">Tiempo en</label>
 
-                  	<div class="col-sm-9">
-                  		<div class="bootstrap-timepicker">
-                    		<input type="text" class="form-control timepicker" id="time_in" name="time_in">
-                    	</div>
-                  	</div>
-                </div>
                 <div class="form-group">
-                  	<label for="time_out" class="col-sm-3 control-label">Se acabó el tiempo</label>
-
-                  	<div class="col-sm-9">
-                  		<div class="bootstrap-timepicker">
-                    		<input type="text" class="form-control timepicker" id="time_out" name="time_out">
-                    	</div>
-                  	</div>
+                    <label for="proyecto" class="col-sm-3 control-label">Proyecto</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="proyecto" name="proyecto" required>
+                    </div>
                 </div>
+
+                     <div class="form-group">
+                    <label for="descripcion" class="col-sm-3 control-label">Proyecto</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+                    </div>
+                </div>
+                       
+
+
+
           	</div>
           	<div class="modal-footer">
             	<button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal"><i class="fa fa-close"></i> Cerrar</button>
@@ -75,21 +75,18 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  	<label for="edit_time_in" class="col-sm-3 control-label">Tiempo en</label>
+                  	<label for="proyecto" class="col-sm-3 control-label">Proyecto</label>
 
                   	<div class="col-sm-9">
-                  		<div class="bootstrap-timepicker">
-                    		<input type="text" class="form-control timepicker" id="edit_time_in" name="edit_time_in">
-                    	</div>
+                  		  <input type="text" class="form-control" id="proyecto" name="proyecto" required> 
                   	</div>
                 </div>
                 <div class="form-group">
-                  	<label for="edit_time_out" class="col-sm-3 control-label">Se acabó el tiempo</label>
+                  	<label for="descripcion" class="col-sm-3 control-label">descripcion</label>
 
                   	<div class="col-sm-9">
-                  		<div class="bootstrap-timepicker">
-                    		<input type="text" class="form-control timepicker" id="edit_time_out" name="edit_time_out">
-                    	</div>
+                  		  <input type="text" class="form-control" id="descripcion" name="descripcion" required>
+                    
                   	</div>
                 </div>
           	</div>

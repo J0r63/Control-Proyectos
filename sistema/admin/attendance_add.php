@@ -3,12 +3,11 @@
 
 	if(isset($_POST['add'])){
 		$employee = $_POST['employee'];
+		$proyecto = $_POST['proyecto'];
+		$descripcion = $_POST['descripcion'];
+		
 		$date = $_POST['date'];
-		$time_in = $_POST['time_in'];
-		$time_in = date('H:i:s', strtotime($time_in));
-		$time_out = $_POST['time_out'];
-		$time_out = date('H:i:s', strtotime($time_out));
-
+	
 		$sql = "SELECT * FROM employees WHERE employee_id = '$employee'";
 		$query = $conn->query($sql);
 
@@ -31,9 +30,9 @@
 				$sql = "SELECT * FROM schedules WHERE id = '$sched'";
 				$squery = $conn->query($sql);
 				$scherow = $squery->fetch_assoc();
-				$logstatus = ($time_in > $scherow['time_in']) ? 0 : 1;
+				
 				//
-				$sql = "INSERT INTO attendance (employee_id, date, time_in, time_out, status) VALUES ('$emp', '$date', '$time_in', '$time_out', '$logstatus')";
+				$sql = "INSERT INTO attendance (employee_id, date, proyecto, descripcion, status) VALUES ('$emp', '$date', '$proyecto', '$descripcion', '$logstatus')";
 				if($conn->query($sql)){
 					$_SESSION['success'] = 'Attendance added successfully';
 					$id = $conn->insert_id;
@@ -42,21 +41,9 @@
 					$query = $conn->query($sql);
 					$srow = $query->fetch_assoc();
 
-					if($srow['time_in'] > $time_in){
-						$time_in = $srow['time_in'];
-					}
+					
 
-					if($srow['time_out'] < $time_out){
-						$time_out = $srow['time_out'];
-					}
-
-					$time_in = new DateTime($time_in);
-					$time_out = new DateTime($time_out);
-					$interval = $time_in->diff($time_out);
-					$hrs = $interval->format('%h');
-					$mins = $interval->format('%i');
-					$mins = $mins/60;
-					$int = $hrs + $mins;
+					
 					if($int > 4){
 						$int = $int - 1;
 					}
